@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 25px;
+            background-color: #E8EBF7;
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <form action="pedido.js">
+        <h1>Realiza tu pedido</h1>
+
+        <h2>Selecciona tus sabores</h2>
+        
+        <input type="checkbox" id="sabor1" name="sabor1" value="Chocolate">
+        <label for="sabor1">Chocolate</label><br>
+        <input type="checkbox" id="sabor2" name="sabor2" value="Vainilla">
+        <label for="sabor2">Vainilla</label><br>
+        <input type="checkbox" id="sabor3" name="sabor3" value="Fresa">
+        <label for="sabor3">Fresa</label><br>
+        <input type="checkbox" id="sabor4" name="sabor4" value="Lima">
+        <label for="sabor4">Lima</label><br>
+        <input type="checkbox" id="sabor5" name="sabor5" value="Oreo">
+        <label for="sabor5">Oreo</label><br>
+
+        <h2>Selecciona tus adornos</h2>
+
+        <input type="checkbox" id="adorno1" name="adorno1" value="bubbles">
+        <label for="adorno1">Esferas de sabores</label><br>
+        <input type="checkbox" id="adorno2" name="adorno2" value="chispas">
+        <label for="adorno2">Chispas de sabores</label><br>
+        <input type="checkbox" id="adorno3" name="adorno3" value="decor">
+        <label for="adorno3">Decoracion personalizada</label><br>
+
+        <h2>Datos de envio</h2>
+        <label for="Nombre">Nombre Completo</label> <br>
+        <input type="text" id="Nombre" name="Nombre" placeholder="Nombre">
+        <br><br>
+        <label for="Telefono">Telefono</label> <br>
+        <input type="tel" id="Telefono" name="Telefono" placeholder="Telefono">
+        <br><br>
+        <label for="Correo">Correo electronico</label> <br>
+        <input type="email" id="Correo" name="Correo" placeholder="Correo">
+    </form>
+</body>
+
+</html>

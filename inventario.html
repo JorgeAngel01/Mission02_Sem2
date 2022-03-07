@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #E8EBF7;
+        }
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 10%;
+            /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+            height: 300px;
+            border: 1px solid black;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 90%;
+            background-color: #f1f1f1;
+            height: 300px;
+            border: 1px solid black;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+        nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+        h1 {
+            text-align: center;
+        }
+        head{
+            background-color: #b83531;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Inventario</h1>
+    </header>
+
+    <br><br>
+    <section>
+        <nav>
+            <ul>
+                <li><h1><b>Pedidos</b></h1></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h2>Pedidos pendientes</h1>
+                <p><a href="#">Pedido #01 </a></p>
+                <p><a href="#">Pedido #02 </a></p>
+        </article>
+    </section>
+    <section>
+        <nav>
+            <ul>
+                <li><h1><b>Inventario</b></h1></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h2>Adornos Restantes</h1>
+            <p>Esferas de colores - 23</p>
+            <p>Chispitas de colores - 56</p>
+        </article>
+    </section>
+    
+    
+</body>
+
+</html>
